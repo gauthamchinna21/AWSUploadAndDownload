@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FB2479C20BE79FF0067564D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2479B20BE79FF0067564D /* AppDelegate.m */; };
+		0FB2479F20BE79FF0067564D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2479E20BE79FF0067564D /* ViewController.m */; };
+		0FB247A220BE79FF0067564D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB247A020BE79FF0067564D /* Main.storyboard */; };
+		0FB247A420BE7A010067564D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB247A320BE7A010067564D /* Assets.xcassets */; };
+		0FB247A720BE7A010067564D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB247A520BE7A010067564D /* LaunchScreen.storyboard */; };
+		0FB247AA20BE7A010067564D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB247A920BE7A010067564D /* main.m */; };
+		0FB247B420BE7A020067564D /* AWSAudioUploadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB247B320BE7A020067564D /* AWSAudioUploadTests.m */; };
+		0FB247BF20BE7A020067564D /* AWSAudioUploadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB247BE20BE7A020067564D /* AWSAudioUploadUITests.m */; };
+		0FB247D220BE7B5C0067564D /* AWSUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB247D120BE7B5C0067564D /* AWSUpload.m */; };
+		0FB247D720BE7B9D0067564D /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB247D420BE7B9C0067564D /* AWSCognito.framework */; };
+		0FB247D820BE7B9D0067564D /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB247D520BE7B9C0067564D /* AWSCore.framework */; };
+		0FB247D920BE7B9D0067564D /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB247D620BE7B9C0067564D /* AWSS3.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FB247B020BE7A020067564D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FB2478F20BE79FF0067564D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FB2479620BE79FF0067564D;
+			remoteInfo = AWSAudioUpload;
+		};
+		0FB247BB20BE7A020067564D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FB2478F20BE79FF0067564D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FB2479620BE79FF0067564D;
+			remoteInfo = AWSAudioUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FB2479720BE79FF0067564D /* AWSAudioUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSAudioUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB2479A20BE79FF0067564D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FB2479B20BE79FF0067564D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FB2479D20BE79FF0067564D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FB2479E20BE79FF0067564D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FB247A120BE79FF0067564D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FB247A320BE7A010067564D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FB247A620BE7A010067564D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FB247A820BE7A010067564D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB247A920BE7A010067564D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FB247AF20BE7A020067564D /* AWSAudioUploadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWSAudioUploadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB247B320BE7A020067564D /* AWSAudioUploadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSAudioUploadTests.m; sourceTree = "<group>"; };
+		0FB247B520BE7A020067564D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB247BA20BE7A020067564D /* AWSAudioUploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWSAudioUploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB247BE20BE7A020067564D /* AWSAudioUploadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSAudioUploadUITests.m; sourceTree = "<group>"; };
+		0FB247C020BE7A020067564D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB247D020BE7B5C0067564D /* AWSUpload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSUpload.h; sourceTree = "<group>"; };
+		0FB247D120BE7B5C0067564D /* AWSUpload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWSUpload.m; sourceTree = "<group>"; };
+		0FB247D420BE7B9C0067564D /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		0FB247D520BE7B9C0067564D /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		0FB247D620BE7B9C0067564D /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FB2479420BE79FF0067564D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB247D720BE7B9D0067564D /* AWSCognito.framework in Frameworks */,
+				0FB247D820BE7B9D0067564D /* AWSCore.framework in Frameworks */,
+				0FB247D920BE7B9D0067564D /* AWSS3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB247AC20BE7A020067564D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB247B720BE7A020067564D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FB2478E20BE79FF0067564D = {
+			isa = PBXGroup;
+			children = (
+				0FB2479920BE79FF0067564D /* AWSAudioUpload */,
+				0FB247B220BE7A020067564D /* AWSAudioUploadTests */,
+				0FB247BD20BE7A020067564D /* AWSAudioUploadUITests */,
+				0FB2479820BE79FF0067564D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FB2479820BE79FF0067564D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FB2479720BE79FF0067564D /* AWSAudioUpload.app */,
+				0FB247AF20BE7A020067564D /* AWSAudioUploadTests.xctest */,
+				0FB247BA20BE7A020067564D /* AWSAudioUploadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FB2479920BE79FF0067564D /* AWSAudioUpload */ = {
+			isa = PBXGroup;
+			children = (
+				0FB2479A20BE79FF0067564D /* AppDelegate.h */,
+				0FB2479B20BE79FF0067564D /* AppDelegate.m */,
+				0FB2479D20BE79FF0067564D /* ViewController.h */,
+				0FB2479E20BE79FF0067564D /* ViewController.m */,
+				0FB247CF20BE7B4A0067564D /* ASWUpload */,
+				0FB247D320BE7B9C0067564D /* AWS3 */,
+				0FB247A020BE79FF0067564D /* Main.storyboard */,
+				0FB247A320BE7A010067564D /* Assets.xcassets */,
+				0FB247A520BE7A010067564D /* LaunchScreen.storyboard */,
+				0FB247A820BE7A010067564D /* Info.plist */,
+				0FB247A920BE7A010067564D /* main.m */,
+			);
+			path = AWSAudioUpload;
+			sourceTree = "<group>";
+		};
+		0FB247B220BE7A020067564D /* AWSAudioUploadTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FB247B320BE7A020067564D /* AWSAudioUploadTests.m */,
+				0FB247B520BE7A020067564D /* Info.plist */,
+			);
+			path = AWSAudioUploadTests;
+			sourceTree = "<group>";
+		};
+		0FB247BD20BE7A020067564D /* AWSAudioUploadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FB247BE20BE7A020067564D /* AWSAudioUploadUITests.m */,
+				0FB247C020BE7A020067564D /* Info.plist */,
+			);
+			path = AWSAudioUploadUITests;
+			sourceTree = "<group>";
+		};
+		0FB247CF20BE7B4A0067564D /* ASWUpload */ = {
+			isa = PBXGroup;
+			children = (
+				0FB247D020BE7B5C0067564D /* AWSUpload.h */,
+				0FB247D120BE7B5C0067564D /* AWSUpload.m */,
+			);
+			path = ASWUpload;
+			sourceTree = "<group>";
+		};
+		0FB247D320BE7B9C0067564D /* AWS3 */ = {
+			isa = PBXGroup;
+			children = (
+				0FB247D420BE7B9C0067564D /* AWSCognito.framework */,
+				0FB247D520BE7B9C0067564D /* AWSCore.framework */,
+				0FB247D620BE7B9C0067564D /* AWSS3.framework */,
+			);
+			path = AWS3;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FB2479620BE79FF0067564D /* AWSAudioUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FB247C320BE7A020067564D /* Build configuration list for PBXNativeTarget "AWSAudioUpload" */;
+			buildPhases = (
+				0FB2479320BE79FF0067564D /* Sources */,
+				0FB2479420BE79FF0067564D /* Frameworks */,
+				0FB2479520BE79FF0067564D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AWSAudioUpload;
+			productName = AWSAudioUpload;
+			productReference = 0FB2479720BE79FF0067564D /* AWSAudioUpload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FB247AE20BE7A020067564D /* AWSAudioUploadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FB247C620BE7A020067564D /* Build configuration list for PBXNativeTarget "AWSAudioUploadTests" */;
+			buildPhases = (
+				0FB247AB20BE7A020067564D /* Sources */,
+				0FB247AC20BE7A020067564D /* Frameworks */,
+				0FB247AD20BE7A020067564D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FB247B120BE7A020067564D /* PBXTargetDependency */,
+			);
+			name = AWSAudioUploadTests;
+			productName = AWSAudioUploadTests;
+			productReference = 0FB247AF20BE7A020067564D /* AWSAudioUploadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0FB247B920BE7A020067564D /* AWSAudioUploadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FB247C920BE7A020067564D /* Build configuration list for PBXNativeTarget "AWSAudioUploadUITests" */;
+			buildPhases = (
+				0FB247B620BE7A020067564D /* Sources */,
+				0FB247B720BE7A020067564D /* Frameworks */,
+				0FB247B820BE7A020067564D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FB247BC20BE7A020067564D /* PBXTargetDependency */,
+			);
+			name = AWSAudioUploadUITests;
+			productName = AWSAudioUploadUITests;
+			productReference = 0FB247BA20BE7A020067564D /* AWSAudioUploadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FB2478F20BE79FF0067564D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Mac-OBS-5";
+				TargetAttributes = {
+					0FB2479620BE79FF0067564D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					0FB247AE20BE7A020067564D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0FB2479620BE79FF0067564D;
+					};
+					0FB247B920BE7A020067564D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0FB2479620BE79FF0067564D;
+					};
+				};
+			};
+			buildConfigurationList = 0FB2479220BE79FF0067564D /* Build configuration list for PBXProject "AWSAudioUpload" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FB2478E20BE79FF0067564D;
+			productRefGroup = 0FB2479820BE79FF0067564D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FB2479620BE79FF0067564D /* AWSAudioUpload */,
+				0FB247AE20BE7A020067564D /* AWSAudioUploadTests */,
+				0FB247B920BE7A020067564D /* AWSAudioUploadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FB2479520BE79FF0067564D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB247A720BE7A010067564D /* LaunchScreen.storyboard in Resources */,
+				0FB247A420BE7A010067564D /* Assets.xcassets in Resources */,
+				0FB247A220BE79FF0067564D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB247AD20BE7A020067564D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB247B820BE7A020067564D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FB2479320BE79FF0067564D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB2479F20BE79FF0067564D /* ViewController.m in Sources */,
+				0FB247AA20BE7A010067564D /* main.m in Sources */,
+				0FB247D220BE7B5C0067564D /* AWSUpload.m in Sources */,
+				0FB2479C20BE79FF0067564D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB247AB20BE7A020067564D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB247B420BE7A020067564D /* AWSAudioUploadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FB247B620BE7A020067564D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB247BF20BE7A020067564D /* AWSAudioUploadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FB247B120BE7A020067564D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FB2479620BE79FF0067564D /* AWSAudioUpload */;
+			targetProxy = 0FB247B020BE7A020067564D /* PBXContainerItemProxy */;
+		};
+		0FB247BC20BE7A020067564D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FB2479620BE79FF0067564D /* AWSAudioUpload */;
+			targetProxy = 0FB247BB20BE7A020067564D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FB247A020BE79FF0067564D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FB247A120BE79FF0067564D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FB247A520BE7A010067564D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FB247A620BE7A010067564D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FB247C120BE7A020067564D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FB247C220BE7A020067564D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FB247C420BE7A020067564D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AWS3",
+				);
+				INFOPLIST_FILE = AWSAudioUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.AWSAudioUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FB247C520BE7A020067564D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AWS3",
+				);
+				INFOPLIST_FILE = AWSAudioUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.AWSAudioUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0FB247C720BE7A020067564D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				INFOPLIST_FILE = AWSAudioUploadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.AWSAudioUploadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWSAudioUpload.app/AWSAudioUpload";
+			};
+			name = Debug;
+		};
+		0FB247C820BE7A020067564D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				INFOPLIST_FILE = AWSAudioUploadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.AWSAudioUploadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWSAudioUpload.app/AWSAudioUpload";
+			};
+			name = Release;
+		};
+		0FB247CA20BE7A020067564D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				INFOPLIST_FILE = AWSAudioUploadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.AWSAudioUploadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AWSAudioUpload;
+			};
+			name = Debug;
+		};
+		0FB247CB20BE7A020067564D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				INFOPLIST_FILE = AWSAudioUploadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.obs.AWSAudioUploadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AWSAudioUpload;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FB2479220BE79FF0067564D /* Build configuration list for PBXProject "AWSAudioUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB247C120BE7A020067564D /* Debug */,
+				0FB247C220BE7A020067564D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FB247C320BE7A020067564D /* Build configuration list for PBXNativeTarget "AWSAudioUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB247C420BE7A020067564D /* Debug */,
+				0FB247C520BE7A020067564D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FB247C620BE7A020067564D /* Build configuration list for PBXNativeTarget "AWSAudioUploadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB247C720BE7A020067564D /* Debug */,
+				0FB247C820BE7A020067564D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FB247C920BE7A020067564D /* Build configuration list for PBXNativeTarget "AWSAudioUploadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FB247CA20BE7A020067564D /* Debug */,
+				0FB247CB20BE7A020067564D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FB2478F20BE79FF0067564D /* Project object */;
+}
